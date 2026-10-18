@@ -1,0 +1,131 @@
+.log_page {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 40%, #e2e8f0 100%);
+}
+
+.log_page h3 {
+    color: #0f172a;
+}
+
+#next {
+    padding: 0.8rem 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: #0f172a;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.05);
+}
+
+.pagenext,
+.next,
+.other,
+.otherpage,
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.page {
+    padding: 0.75rem 1rem 0;
+}
+
+.login-topic {
+    text-align: center;
+    background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+    color: #fff;
+    border-radius: 14px 14px 0 0;
+    padding: 0.9rem 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.users,
+.admin,
+.Service_member,
+.customer_member {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+#log-img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 18px;
+    margin: 1rem auto;
+}
+
+#log-topic {
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0.5rem 0 1rem;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.user-form,
+.admin-form,
+.servicemem-form,
+.custmem-form {
+    background: rgba(255, 255, 255, 0.92);
+    width: min(100%, 420px);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: auto;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.1);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+#u_sub,
+#a_sub {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.9rem 1rem;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-shadow: 0 12px 22px rgba(79, 70, 229, 0.18);
+}
+
+#next:hover,
+#u_sub:hover,
+#a_sub:hover,
+#next:focus-visible,
+#u_sub:focus-visible,
+#a_sub:focus-visible {
+    transform: translateY(-1px);
+}
+
+@media only screen and (max-width: 900px) {
+    .log_page {
+        grid-template-columns: 1fr;
+    }
+
+    .users,
+    .admin,
+    .Service_member,
+    .customer_member {
+        min-height: auto;
+    }
+}
+
